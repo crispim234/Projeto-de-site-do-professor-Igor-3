@@ -11,7 +11,7 @@ const BlogPost: React.FC<BlogPostProps> = ({ post }) => {
   const { state } = useTheme();
   return (
     <article
-      className={`${styles.post} ${state.theme === "dark" ? styles.dark : ""}`}
+      className={`${styles.post} ${state.theme === "Dark" ? styles.dark : ""}`}
     >
       <h3>{post.title}</h3>
       <p>{post.content}</p>

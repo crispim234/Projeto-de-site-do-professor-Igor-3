@@ -7,7 +7,7 @@ const Footer: React.FC = () => {
   return (
     <footer
       className={`${styles.footer} ${
-        state.theme === "dark" ? styles.dark : ""
+        state.theme === "Dark" ? styles.dark : ""
       }`}
     >
       <p>&copy; 2023 Meu Portfólio. Todos os direitos reservados.</p>

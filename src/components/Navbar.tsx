@@ -8,7 +8,7 @@ const Navbar: React.FC = () => {
   return (
     <nav
       className={`${styles.navbar} ${
-        state.theme === "dark" ? styles.dark : ""
+        state.theme === "Dark" ? styles.dark : ""
       }`}
     >
       <ul>

@@ -6,10 +6,10 @@ const HeroSection: React.FC = () => {
   const { state } = useTheme();
   return (
     <section
-      className={`${styles.hero} ${state.theme === "dark" ? styles.dark : ""}`}
+      className={`${styles.hero} ${state.theme === "Dark" ? styles.dark : ""}`}
     >
-      <h2>Bem-vindo ao Meu Portfólio</h2>
-      <p>Sou um desenvolvedor apaixonado por tecnologia.</p>
+      <h2>Seja bem-vindo ao nosso portifólio</h2>
+      <p>Somos um grupo de devs que são apaixonados por tecnologia.</p>
     </section>
   );
 };

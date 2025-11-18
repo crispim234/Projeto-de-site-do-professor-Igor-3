@@ -7,12 +7,12 @@ const Header: React.FC = () => {
   return (
     <header
       className={`${styles.header} ${
-        state.theme === "dark" ? styles.dark : ""
+        state.theme === "Dark" ? styles.dark : ""
       }`}
     >
-      <h1>Meu Portfólio</h1>
+      <h1>Nosso Portfólio</h1>
       <button onClick={() => dispatch({ type: "TOGGLE_THEME" })}>
-        Alternar Tema ({state.theme})
+        {state.theme} theme
       </button>
     </header>
   );

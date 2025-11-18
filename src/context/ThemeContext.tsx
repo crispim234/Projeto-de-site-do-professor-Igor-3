@@ -1,6 +1,6 @@
 import React, { createContext, useContext, useReducer } from "react";
 
-type ThemeState = { theme: "light" | "dark" };
+type ThemeState = { theme: "Light" | "Dark" };
 type ThemeAction = { type: "TOGGLE_THEME" };
 
 const ThemeContext = createContext<
@@ -14,7 +14,7 @@ const ThemeContext = createContext<
 const themeReducer = (state: ThemeState, action: ThemeAction): ThemeState => {
   switch (action.type) {
     case "TOGGLE_THEME":
-      return { theme: state.theme === "light" ? "dark" : "light" };
+      return { theme: state.theme === "Light" ? "Dark" : "Light" };
     default:
       return state;
   }
@@ -23,7 +23,7 @@ const themeReducer = (state: ThemeState, action: ThemeAction): ThemeState => {
 export const ThemeProvider: React.FC<{ children: React.ReactNode }> = ({
   children,
 }) => {
-  const [state, dispatch] = useReducer(themeReducer, { theme: "light" });
+  const [state, dispatch] = useReducer(themeReducer, { theme: "Light" });
   return (
     <ThemeContext.Provider value={{ state, dispatch }}>
       {children}

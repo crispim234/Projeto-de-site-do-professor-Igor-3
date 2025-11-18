@@ -15,7 +15,7 @@ const ContactForm: React.FC = () => {
 
   return (
     <form
-      className={`${styles.form} ${state.theme === "dark" ? styles.dark : ""}`}
+      className={`${styles.form} ${state.theme === "Dark" ? styles.dark : ""}`}
       onSubmit={handleSubmit}
     >
       <input
