@@ -1,0 +1,35 @@
+.navbar {
+  background-color: #fff;
+  padding: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar.dark {
+  background-color: #222;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.navbar li a {
+  text-decoration: none;
+  color: #007bff;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.navbar li a:hover {
+  color: #0056b3;
+}
+
+.navbar.dark li a {
+  color: #f4f4f4;
+}
+
+.navbar.dark li a:hover {
+  color: #ccc;
+}
