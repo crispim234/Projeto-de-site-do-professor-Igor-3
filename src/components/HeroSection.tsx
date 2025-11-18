@@ -9,7 +9,7 @@ const HeroSection: React.FC = () => {
       className={`${styles.hero} ${state.theme === "Dark" ? styles.dark : ""}`}
     >
       <h2>Seja bem-vindo ao nosso portifólio</h2>
-      <p>Somos um grupo de devs que são apaixonados por tecnologia.</p>
+      <p>Somos um grupo de devs apaixonados por tecnologia.</p>
     </section>
   );
 };
